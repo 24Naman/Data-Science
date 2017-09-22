@@ -9,7 +9,7 @@ import pandas as pd
 
 train_data = pd.read_csv("datasets/train.csv")
 
-print(train_data.head())    # printing first five records
+print(train_data.head())    # printing first five records (head(5))
 
 # shape of dataset
 print(train_data.shape)   # num: (row, columns)
