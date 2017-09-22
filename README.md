@@ -1,5 +1,5 @@
 # Principles of Data Science using Python
 
 # Index of Chapters 
-1) Types Of Data
-2) The Five Steps Of Data Science
+<h4>1) Types Of Data</h4>
+<h4>2) The Five Steps Of Data Science</h4>
