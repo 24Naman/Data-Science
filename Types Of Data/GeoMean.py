@@ -6,11 +6,13 @@
 """
 from functools import reduce
 
-# data of temperature
-data = [31, 32, 32, 31, 28, 29, 31, 38, 32, 31, 30, 29, 30, 31, 26]
 
-product = reduce(lambda x, y: x * y, data)
+if __name__ == '__main__':
+    # data of temperature
+    data = [31, 32, 32, 31, 28, 29, 31, 38, 32, 31, 30, 29, 30, 31, 26]
 
-geo_mean = product ** (1 / len(data))
+    product = reduce(lambda x, y: x * y, data)
 
-print("Geo Mean = ", geo_mean)
+    geo_mean = product ** (1 / len(data))
+
+    print("Geo Mean = ", geo_mean)
