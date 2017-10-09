@@ -11,3 +11,6 @@ if __name__ == '__main__':
 
     # row and columns in data
     print("Shape of data: ", yelp_raw_data.shape)
+
+    # description of dataframe
+    print("Description of data frame", yelp_raw_data.describe(), sep="\n")
