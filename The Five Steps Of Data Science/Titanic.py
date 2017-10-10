@@ -16,8 +16,7 @@ print(f"Shape of dataset: {titanic.shape}")
 # to convert a qualitative column into a numerical column
 titanic['Sex'] = np.where(titanic['Sex'] == 'female', [1], [0])
 
-print("Number of null values: ")
-print(titanic.isnull().sum())
+print("Number of null values: ", titanic.isnull().sum(), sep='\n')
 
 # calculating mean age
 average_age = titanic['Age'].mean()
