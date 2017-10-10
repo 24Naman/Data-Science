@@ -8,7 +8,7 @@
 import numpy as np
 import pandas as pd
 
-titanic = pd.read_csv(r"D:\Naman\Data-Science\datasets\csv\Stat2Data\Titanic.csv")
+titanic = pd.read_csv(r"../datasets/csv/Stat2Data/Titanic.csv")
 print(f"First five records: {titanic.head()}")
 print(f"Shape of dataset: {titanic.shape}")
 
