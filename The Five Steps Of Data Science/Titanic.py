@@ -12,6 +12,8 @@ titanic = pd.read_csv(r"../datasets/csv/Stat2Data/Titanic.csv")
 print(f"First five records: {titanic.head()}")
 print(f"Shape of dataset: {titanic.shape}")
 
+# replacing female with 1 and male with 0 in sex column
+# to convert a qualitative column into a numerical column
 titanic['Sex'] = np.where(titanic['Sex'] == 'female', [1], [0])
 
 print("Number of null values: ")
