@@ -1,5 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
+"""
+    Data analysis of Yelp dataset
+
+"""
 
 import pandas as pd
 import matplotlib.pyplot as plt
