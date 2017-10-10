@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 """
-    Analyzing train data using Python Pandas
+    Data-Science: Created by Naman Jain on 11-10-2017
 
+    Analyzing train data using Python Pandas
 """
 
 import pandas as pd
@@ -25,3 +26,4 @@ print("PassengerId column", train_data['PassengerId'].describe())     # quick st
 
 # describing the column (Qualitative Column)
 print("Fare column", train_data['Fare'].describe())     # quick stats of column "Fare"
+
