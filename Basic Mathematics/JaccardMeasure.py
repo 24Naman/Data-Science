@@ -3,6 +3,8 @@
 """
     Data-Science: Created by Naman Jain on 13-10-2017
 
+    if jaccard measure is closer to zero than two entities are more dissimilar
+    elif jaccard measure is closer to one than two entities are more similar
 """
 
 user1 = {"Target", "Banana Republic", "Old Navy"}
