@@ -13,7 +13,7 @@ if __name__ == '__main__':
     USER_PREF = np.array([5, 1, 3])  # [comedy, romantic, action]
 
     # create a random movie matrix of 10,000 movies
-    # it will random integers from (0-4) + 1 i.e. 1-5
+    # it will contain random integers from (0-4) + 1 i.e. 1-5
     # size -> int or tuple of ints; if (m, n, k) then m * n * k samples is drawn
     # here the size of random matrix would be 3 * 10000
     MOVIES = np.random.randint(5, size=(3, 10000)) + 1
