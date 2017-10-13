@@ -3,6 +3,7 @@
 """
     Data-Science: Created by Naman Jain on 13-10-2017
 
+    Movie Recommendation system demo
 """
 
 import numpy as np
