@@ -26,4 +26,3 @@ if __name__ == '__main__':
 
     print(f"Index of the most recommended movie {np.argmax(DOT_MATRIX)}")
     print(f"Index of the least recommended movie {np.argmin(DOT_MATRIX)}")
-
