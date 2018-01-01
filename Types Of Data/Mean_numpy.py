@@ -7,16 +7,7 @@
 
 import numpy
 
-results = list()
-
-i = int()
-while i >= 0:
-    try:
-        i = int(input())
-        if i > 0:
-            results.append(i)
-    except ValueError:
-        pass
+results = [5, 4, 3, 4, 5, 3, 2, 5, 3, 2, 1, 4, 5, 3, 4, 4, 5, 4, 2, 1, 4, 5, 4, 3, 2, 4, 4, 5, 4, 3, 2, 1]
 
 sorted_result = sorted(results)
 print(sorted_result)
