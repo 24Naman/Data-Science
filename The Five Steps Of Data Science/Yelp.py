@@ -8,7 +8,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-if __name__ == '__main__':
+def main():
+    """
+        Main function
+    """
     yelp_raw_data = pd.read_csv("../datasets/csv/misc/yelp.csv")
 
     print("First five rows -->")
@@ -27,3 +30,7 @@ if __name__ == '__main__':
     # plotting the data
     plt.plot(sorted_data)
     plt.show()
+
+
+if __name__ == '__main__':
+    main()
