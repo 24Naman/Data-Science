@@ -30,6 +30,7 @@ def main():
     average_age = titanic['Age'].mean()
 
     # replacing null values with average age
+    # will modify other views on the object
     titanic['Age'].fillna(average_age, inplace=True)
 
     print("Number of null values ->", titanic.isnull().sum(), sep='\n')
