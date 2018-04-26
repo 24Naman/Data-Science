@@ -24,7 +24,7 @@ def main():
     # description of dataframe
     print("Description of data frame", yelp_raw_data.describe(), sep="\n")
 
-    # sorting the counts
+    # sorting the value counts
     data = yelp_raw_data['stars'].value_counts()
     sorted_data = data.sort_values()
 
