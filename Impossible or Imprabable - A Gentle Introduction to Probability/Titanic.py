@@ -4,7 +4,7 @@
     Data-Science: Created by Naman Jain on 27-04-2018
     File: Titanic.py
 
-    Finding types of people who will likely to survive the disaster
+    Finding types of people who are likely to survive the disaster
 """
 
 import pandas as pd
