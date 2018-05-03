@@ -26,7 +26,7 @@ def main():
     """
     trials = []
     num_trials = 100
-    for trial in range(num_trials):
+    for _ in range(num_trials):
         trials.append(random_variable_of_dice_roll())
 
     print(sum(trials)/float(num_trials))
