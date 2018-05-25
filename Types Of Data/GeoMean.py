@@ -15,4 +15,4 @@ if __name__ == '__main__':
 
     geo_mean = product ** (1 / len(data))
 
-    print("Geo Mean = ", geo_mean)
+    print("Geometric Mean = ", geo_mean)
