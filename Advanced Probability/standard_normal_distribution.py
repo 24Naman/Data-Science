@@ -11,6 +11,13 @@ import numpy as np
 
 
 def normal_pdf(x, mu=0, sigma=1):
+    """
+        calculating normal pdf
+    :param x:
+    :param mu:
+    :param sigma:
+    :return:
+    """
     return (1. / np.sqrt(2 * 3.14 * sigma ** 2)) * 2.718 ** (-(x - mu) ** 2 / (2. * sigma ** 2))
 
 
