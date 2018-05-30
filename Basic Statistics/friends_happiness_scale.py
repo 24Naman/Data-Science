@@ -38,6 +38,9 @@ def main():
 
     plt.show()
 
+    # correlation
+    print(data_frame_scaled.corr())
+
 
 if __name__ == '__main__':
     main()
