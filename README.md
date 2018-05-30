@@ -5,4 +5,5 @@
 <h4>3) Basic Mathematics</h4>
 <h4>4) Impossible or Improbable - A Gentle Introduction to Probability</h4>
 <h4>5) Advanced Probability</h4>
-<h4>5) Basic Statistics</h4>
+<h4>6) Basic Statistics</h4>
+<h4>7) Advanced Statistics</h4>
