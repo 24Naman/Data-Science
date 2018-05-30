@@ -27,7 +27,7 @@ def main():
     print(data_frame.head())
 
     print("Data with scaling: ")
-    # the preprocessing module is revealing z-score of each column
+    # the preprocessing module is used for revealing z-score of each column
     # it includes 1) finding mean 2) finding SD 3) applying z-score to each element
     data_frame_scaled = pd.DataFrame(preprocessing.scale(data_frame), columns=['friends_scaled',
                                                                                'happiness_scaled'])
