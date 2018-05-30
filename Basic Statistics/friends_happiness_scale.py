@@ -7,6 +7,8 @@
 """
 
 import pandas as pd
+from matplotlib import pyplot as plt
+from sklearn import preprocessing
 
 
 def main():
@@ -21,7 +23,20 @@ def main():
 
     data_frame = pd.DataFrame({'friends': friends, 'happiness': happiness})
 
+    print("Data w/o scaling: ")
     print(data_frame.head())
+
+    print("Data with scaling: ")
+    # the preprocessing module is revealing z-score of each column
+    # it includes 1) finding mean 2) finding SD 3) applying z-score to each element
+    data_frame_scaled = pd.DataFrame(preprocessing.scale(data_frame), columns=['friends_scaled',
+                                                                               'happiness_scaled'])
+
+    print(data_frame_scaled.head())
+
+    data_frame_scaled.plot(kind='scatter', x='friends_scaled', y='happiness_scaled')
+
+    plt.show()
 
 
 if __name__ == '__main__':
