@@ -1,21 +1,27 @@
 #!/usr/bin/python3
 
-import pandas as pd
-
 """
     World alcohol data
-       
+
 """
 
-LINK = "https://raw.githubusercontent.com/sinanuozdemir/principles_of_data_science" \
-       "/master/data/chapter_2/drinks.csv"
+import pandas as pd
 
-DRINKS = pd.read_csv(LINK)
-# printing first 5 rows of csv
-print(DRINKS.head())
 
-# printing first 5 rows of csv
-print("Continent description", DRINKS['continent'].describe())
+def main():
+    """
+        Main Function
+    """
 
-# quantitative column
-print("Beer servings description", DRINKS['beer_servings'].describe())
+    link = "https://raw.githubusercontent.com/sinanuozdemir/principles_of_data_science" \
+           "/master/data/chapter_2/drinks.csv"
+
+    drinks = pd.read_csv(link)
+    # printing first 5 rows of csv
+    print(drinks.head())
+
+    # printing first 5 rows of csv
+    print("Continent description", drinks['continent'].describe())
+
+    # quantitative column
+    print("Beer servings description", drinks['beer_servings'].describe())
