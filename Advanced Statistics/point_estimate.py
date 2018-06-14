@@ -46,6 +46,20 @@ def main():
     print(breaks.mean() - sample_breaks.mean())
 
     pd.DataFrame(breaks).hist(bins=50, range=(5, 100))
+    # plt.show()
+
+    # Sampling distributions
+
+    point_estimates = []
+
+    # generate 500 samples
+    for x in range(500):
+        # take a sample of 100 points
+        sample = np.random.choice(a=breaks, size=100)
+        # adding sample mean to out list of point estimates
+        point_estimates.append(sample.mean())
+
+    pd.DataFrame(point_estimates).hist()
     plt.show()
 
 
