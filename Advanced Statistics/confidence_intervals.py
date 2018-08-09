@@ -101,9 +101,11 @@ def make_confidence_interval() -> tuple:
     return interval
 
 
-if __name__ == '__main__':
-    main()
+def confidence_level_check():
+    """
 
+    :return:
+    """
     times_in_interval = 0
     for i in range(10000):
         print(f"Turn {i}: {times_in_interval}")
@@ -112,4 +114,9 @@ if __name__ == '__main__':
             # if 39.99 falls in the interval
             times_in_interval += 1
 
-    print(times_in_interval/10000)
+    print(times_in_interval / 10000)
+
+
+if __name__ == '__main__':
+    main()
+    confidence_level_check()
