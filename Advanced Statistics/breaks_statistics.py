@@ -84,8 +84,8 @@ def main():
     point_estimates = []
 
     # generate 500 samples, each of size 100
-    for x in range(500):
-        print(f"Creating point estimate: {x}")
+    for time in range(500):
+        print(f"Creating point estimate: {time}")
         # noinspection PyUnresolvedReferences
         sample = np.random.choice(a=company_breaks, size=100)
         # take a sample of 100 points from the data
