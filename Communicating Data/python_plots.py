@@ -6,8 +6,10 @@
 
 """
 
+import matplotlib.pyplot as plt
 import pandas as pd
-from matplotlib.pyplot import show
+
+drinks = pd.read_csv(r"D:\Naman\Data-Science\Rdatasets-master\Rdatasets-master\csv\Naman\drinks.csv")
 
 
 def scatter_plots():
@@ -26,23 +28,73 @@ def scatter_plots():
     )
 
     data_frame.plot(x='hours_tv_watched', y='work_performance', kind='scatter')
-    show()
+    plt.show()
 
     data_frame.plot(x='hours_tv_watched', y='work_performance', kind='line')
-    show()
+    plt.show()
 
     data_frame.plot(x='hours_tv_watched', y='work_performance', kind='bar')
-    show()
+    plt.show()
 
-    data_frame.plot(x='hours_tv_watched', y='work_performance', kind='scatter')
-    show()
+    data_frame.plot(x='hours_tv_watched', y='work_performance', kind='hist')
+    plt.show()
+
+
+def bar_charts():
+    """
+    :return:
+    """
+
+    drinks.continent.value_counts().plot(kind="bar", title='Countries per continent',
+                                         x='Continent', y="Count")
+    plt.show()
+
+    drinks.groupby('continent').beer_servings.mean().plot(kind='bar')
+    plt.show()
+
+    
+def histograms():
+    """
+
+    :return
+    """
+    rossmann_sales = pd.read_csv(r"D:\Naman\Data-Science\Rdatasets-master\Rdatasets-master\csv"
+                                 r"\Naman\rossmann.csv")
+    print(rossmann_sales.head())
+    
+    # sub-setting the data only for the first store 
+    first_rossmann_sales = rossmann_sales[rossmann_sales['Store'] == 1]
+    
+    # plotting histogram 
+    first_rossmann_sales['Customers'].hist(bins=20)
+    
+    plt.xlabel('Customer Bins')
+    plt.ylabel('Count')
+
+    plt.show()
+    
+
+def box_plots():
+    """
+        Box Plots
+    :return:
+    """
+    drinks.boxplot(column='beer_servings', by='continent')
+    plt.show()
+
+    drinks.boxplot(column='beer_servings', vert=False)
+    plt.show()
 
 
 def main():
     """
         Main Function
     """
-    scatter_plots()
+    breakpoint()
+    # scatter_plots()
+    # bar_charts()
+    # histograms()
+    # box_plots()
 
 
 if __name__ == '__main__':
