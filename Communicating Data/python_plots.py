@@ -9,7 +9,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-drinks = pd.read_csv(r"D:\Naman\Data-Science\Rdatasets-master\Rdatasets-master\csv\Naman\drinks.csv")
+DRINKS = pd.read_csv(r"D:\Naman\Data-Science\Rdatasets-master\Rdatasets-master\csv\Naman\drinks.csv")
 
 
 def scatter_plots():
@@ -45,14 +45,14 @@ def bar_charts():
     :return:
     """
 
-    drinks.continent.value_counts().plot(kind="bar", title='Countries per continent',
+    DRINKS.continent.value_counts().plot(kind="bar", title='Countries per continent',
                                          x='Continent', y="Count")
     plt.show()
 
-    drinks.groupby('continent').beer_servings.mean().plot(kind='bar')
+    DRINKS.groupby('continent').beer_servings.mean().plot(kind='bar')
     plt.show()
 
-    
+
 def histograms():
     """
 
@@ -61,28 +61,28 @@ def histograms():
     rossmann_sales = pd.read_csv(r"D:\Naman\Data-Science\Rdatasets-master\Rdatasets-master\csv"
                                  r"\Naman\rossmann.csv")
     print(rossmann_sales.head())
-    
-    # sub-setting the data only for the first store 
+
+    # sub-setting the data only for the first store
     first_rossmann_sales = rossmann_sales[rossmann_sales['Store'] == 1]
-    
-    # plotting histogram 
+
+    # plotting histogram
     first_rossmann_sales['Customers'].hist(bins=20)
-    
+
     plt.xlabel('Customer Bins')
     plt.ylabel('Count')
 
     plt.show()
-    
+
 
 def box_plots():
     """
         Box Plots
     :return:
     """
-    drinks.boxplot(column='beer_servings', by='continent')
+    DRINKS.boxplot(column='beer_servings', by='continent')
     plt.show()
 
-    drinks.boxplot(column='beer_servings', vert=False)
+    DRINKS.boxplot(column='beer_servings', vert=False)
     plt.show()
 
 
