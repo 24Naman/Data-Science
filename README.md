@@ -7,3 +7,4 @@
 <h4>5) Advanced Probability</h4>
 <h4>6) Basic Statistics</h4>
 <h4>7) Advanced Statistics</h4>
+<h4>8) Communicating Data</h4>
